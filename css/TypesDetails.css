@@ -1,0 +1,359 @@
+/* _____ #section0 공통 스타일 _____ */
+#section0 {
+  padding: 20rem 2rem;
+  margin: 3rem auto 0rem;
+  background: url(../image/mv.png);
+}
+
+#section0 .mainTit {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+#section0 .mainTit h2 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+}
+#section0 .mainTit p {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #121212;
+  text-align: center;
+}
+
+#section0 .content_warp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* --- .left 컬럼 (이미지 및 데스크톱용 가이드) --- */
+#section0 .content .left {
+  margin-bottom: 5rem;
+}
+
+
+
+
+
+
+/* line 이미지 */
+
+
+
+
+
+
+
+#section0 .content .left .alcoholImg {
+  width: 100%;
+  max-width: 20rem;
+  height: 30rem;
+  margin: 5rem auto;
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  animation: floatAnimation 4s ease-in-out infinite;
+}
+@keyframes floatAnimation {
+  0% {transform: translateY(0px);}
+  50% {transform: translateY(-8px);
+  }
+  100% {transform: translateY(0px);}
+}
+#section0 .content .left .alcoholImg img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  transform: rotate(20deg);
+  transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+#section0 .content .left .alcoholImg:hover img {transform: rotate(-10deg);}
+
+#section0 .content .guide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 5rem 0;
+}
+#section0 .content .guide div {
+  margin-bottom: 1rem;
+}
+#section0 .content .guide h4 {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #121212;
+}
+#section0 .content .guide p {
+  font-size: 1.6rem;
+  color: #121212;
+}
+#section0 .content .right .guide {
+  margin-bottom: 2.5rem;
+}
+
+
+/* --- .right 컬럼 (제품 정보, 맛 프로필 등) --- */
+#section0 .content .right{
+  max-width: 60rem;
+}
+#section0 .content .right .tit {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+#section0 .content .right .tit h3 {
+  color: #B32828;
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+#section0 .content .right .tit h4 {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+#section0 .content .right .taste_warp {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+}
+#section0 .content .right .taste {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+#section0 .content .right .taste:last-child {
+  margin-bottom: 0;
+}
+#section0 .content .right .taste h5 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  min-width: 6rem;
+  margin-right: 1rem;
+}
+#section0 .content .right .taste span {
+  position: relative;
+  display: block;
+  flex-grow: 1;
+  height: 1.2rem;
+  background-color: #e0e0e0;
+  border-radius: 0.6rem;
+  overflow: hidden;
+}
+#section0 .content .right .taste span::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#section0 .content .right .taste img.percent {
+  display: block;
+  height: 100%;
+  max-width: 100%;
+  transform-origin: left center;
+  transform: scaleX(0);
+  transition: transform 0.8s 0.2s ease-in-out;
+}
+#section0 .content .right .taste img.percent.animate-in {
+  transform: scaleX(1);
+}
+
+
+#section0 .content .right .explanation {
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: #121212;
+}
+
+#section0 .content .right .data_warp {
+  margin: 5rem 0;
+}
+#section0 .content .right .data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+#section0 .content .right .data h5 {
+  width: 8rem;
+  background-color: #121212;
+  color: #fafafa;
+  height: 3.5rem;
+  border: 1px solid #121212;
+  border-right: none;
+  text-align: center;
+  line-height: 3.5rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+#section0 .content .right .data span {
+  border: 1px solid #121212;
+  display: block;
+  flex-grow: 1;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  text-align: left;
+  padding-left: 1rem;
+  font-size: 1.4rem;
+}
+
+
+/* _____버튼 */
+#section0 .content .right a.con_btn {
+  background-color: #B32828;
+  border: 1px solid #B32828;
+  color: #fff;
+  display: flex;
+  width: 100%;
+  max-width: 30rem;
+  height: 4.5rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  border-radius: 0.8rem;
+  margin: 0 auto;
+  text-decoration: none;
+}
+#section0 .content_warp> a.con_btn{
+  display: flex;
+  width: 100%;
+  max-width: 30rem;
+  height: 4.5rem;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem auto 0 auto;
+  background-color: #121212;
+  border: 1px solid #121212;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  border-radius: 0.8rem;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+/* === 모바일 === */
+@media screen and (max-width:767px) {
+  .dsk_only{
+    display: none !important;
+  }
+
+}
+
+
+
+
+/* === 텝, PC 공통 === */
+@media screen and (min-width:768px),
+screen and (min-width:1200px) {
+  .mob_only {
+  display: none !important;
+  }
+  .dsk_only {
+    display: block;
+  }
+
+  
+  #section0 {
+
+    margin: 3rem auto 0rem;
+  }
+  #section0 .mainTit {
+    text-align: left;
+  }
+
+  #section0 .content {
+    display: flex;
+    gap: 10rem;
+  }
+
+  #section0 .content .left {
+    flex: 0 0 35rem; /* 너비 350px 고정, 늘어나거나 줄어들지 않음 */
+    margin-bottom: 0;
+  }
+  #section0 .content .left .alcoholImg {
+    width: 100%;
+    max-width: 30rem;
+    height: 40rem;
+  }
+
+  #section0 .content .right {
+    margin-top: 13rem;
+    padding-right: 3rem;
+    flex-grow: 1;
+  }
+  #section0 .content .right .data h5 {
+    width: 10rem;
+  }
+  #section0 .content .right a.con_btn {
+    width: auto;
+    min-width: 20rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+#section0 .content_warp> a.con_btn{
+    width: auto;
+    min-width: 20rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-top: 8rem;
+  }
+  
+}
+
+/* === 테블릿 === */
+@media screen and (min-width:768px) {
+  #section0 {
+  min-width: 78rem;
+  }
+
+  #section0 .mainTit p {
+    /* padding-right: 40rem; */
+    display: inline-block;
+    margin-left: 20rem;
+  }
+}
+
+
+/* === PC === */
+@media screen and (min-width:1200px) {
+  #section0 {
+  width: 120rem;
+  }
+
+  #section0 .mainTit p {
+  /* display: inline-block; */
+  font-size: 2rem;
+  font-weight: 700;
+  color: #121212;
+  text-align: center;
+  padding-right: 40rem;
+  }
+
+  #section0 .content .right{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  }
+}

@@ -1,0 +1,15 @@
+/* === 텝, PC 공통 === */
+@media screen and (min-width:768px),
+screen and (min-width:1200px) {
+  
+}
+
+/* === 테블릿 === */
+@media screen and (min-width:768px) {
+
+}
+
+/* === PC === */
+@media screen and (min-width:1200px) {
+
+}

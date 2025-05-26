@@ -1,0 +1,66 @@
+/* _____Main */
+main {
+  padding-top: 6.3rem;
+}
+
+main .visual{
+  height: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fafafa;
+  text-align: center;
+  background: url(../image/Indianink-top.png) no-repeat center center; 
+  background-size: cover;
+}
+main .smenu.mob_only{
+  margin-top: 2rem;
+}
+main .smenu ul:nth-child(2){
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+main .smenu li{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .smenu li a {
+  display: block;
+  text-align: center;
+}
+main .smenu li a.active p{
+  color: #121212;
+}
+main .smenu li p{
+  color: #737373;
+}
+main .smenu.mob_only li a.active p{
+  font-size: 3rem;
+}
+main .smenu li a img {
+  /* width: 70%; */
+  height: auto;
+  display: inline-block;
+  margin: auto;
+  margin-bottom: 0.8rem;
+}
+
+@media screen and (min-width:768px),
+screen and (min-width:1200px) {
+  .mob_only {
+  display: none !important;
+  }
+  /* _____Main */
+  main .smenu{
+  height: 20rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  list-style: none;
+  margin: 2rem 3rem 5rem 3rem;
+  }
+}

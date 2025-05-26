@@ -1,0 +1,15 @@
+@import url(reset.css);
+@import url(common.css);
+@import url(media-common.css);
+@import url(font.css);
+@import url(mb-header.css);
+@import url(media-header.css);
+
+
+/* sub2 공통 */
+/* @import url(Types.css); */
+
+@import url(TypeDetails.css);
+@import url(Media.css);
+
+@import url(smenu.css);
