@@ -101,17 +101,17 @@ main .menu-btn button span {
 #section0 .imgbox {
   position: relative;
   display: flex;
+  justify-content: center;
   gap: 5rem;
-  /* border: 1px solid #000; */
+  /* border: 1px solid #46d4ff; */
   width: auto;
-  height: 20rem;
+  height: 30rem;
 }
 #section0 .imgbox a{
 /*   width: 10rem;
   height: auto; */
   width: auto;
   height: auto;
-  /* border: 1px solid #000; */
 }
 #section0 .imgbox img {
   display: block;
@@ -119,6 +119,20 @@ main .menu-btn button span {
   max-width: 20rem;
   height: 100%;
   margin: 0 auto;
+  animation: floatAnimation 4s ease-in-out infinite;
+}
+#section0 .imgbox:nth-child(2n) img {
+  animation: floatAnimation2 4s ease-in-out infinite;
+}
+@keyframes floatAnimation {
+  0% {transform: translateY(0px) rotate(10deg);}
+  50% {transform: translateY(-10px) rotate(-10deg);}
+  100% {transform: translateY(0px) rotate(10deg);}
+}
+@keyframes floatAnimation2 {
+  0% {transform: translateY(0px) rotate(-10deg);}
+  50% {transform: translateY(10px) rotate(10deg);}
+  100% {transform: translateY(0px) rotate(-10deg);}
 }
 #section0 .imgbox .txtbox {
   align-self: flex-start;
@@ -129,10 +143,15 @@ main .menu-btn button span {
   text-align: center;
   position: absolute;
   bottom: 10rem;
-  left: 15rem;
+  left: 18rem;
   width: 100%;
   z-index: 2;
 }
+#section0 .imgbox:nth-child(2n) .txtbox {
+  border-radius: 3rem 3rem 0 3rem;
+  left: -36rem;
+}
+
 #section0 .imgbox .txtbox h3 {
   font-size: 1.6rem;
   margin: 0 2rem 0.5rem 2rem;
@@ -160,23 +179,22 @@ main .menu-btn button span {
   height: inherit;
   padding: 0;
   margin: 0;
-
 }
 
-#BottomBg:before {
-  content: '';
+#BottomBg div {
   display: block;
   position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 40rem;
+  height: 20rem;
 
-  background-image: url('../image/Indianink-bottom.png');
+  background-image: url('../image/Indianink-bottom0.png');
   background-size: cover;
   background-position: center bottom;
   background-repeat: no-repeat;
-  z-index: 2;
+  z-index: -1;
+  /* border: 1px solid #f71818; */
 }
 
 
@@ -202,25 +220,19 @@ main .menu-btn button span {
   #section0 .imgbox .txtbox {
     display: block;
     /* border: 1px solid #000; */
-    width: 20rem;
+    width: auto;
     height: 4rem;
     opacity: 1;
     background-color: #B32828; 
     color: #fafafa;
-    padding: 1rem 0 0 0;
+    padding: 0.5rem 0 0 0;
     text-align: center;
     position: static;
   }
+  #BottomBg div {
+    background-size: 160%;
+  }
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -268,9 +280,6 @@ screen and (min-width:1200px) {
   #section0 .imgbox {
   width: 18rem;
   }
-  #section0 .imgbox a{
-  width: 13rem;
-  }
   #section0 .imgbox .txtbox {
   width: 35rem;
   visibility: hidden;
@@ -299,8 +308,9 @@ screen and (min-width:1200px) {
   #section0 {
     margin-bottom: 20rem
   }
-  #BottomBg:before {
-  height: 60rem;
+  #BottomBg div {
+  height: 40rem;
+  background-size: 150%;
   }
 }
 
@@ -312,7 +322,8 @@ screen and (min-width:1200px) {
   #section0 {
     margin-bottom: 30rem
   }
-  #BottomBg:before {
-    background-image: url('../image/Indianink-bottom0.png');
+  #BottomBg div {
+  height: 60rem;
+  background-size: 100%;
   }
 }
