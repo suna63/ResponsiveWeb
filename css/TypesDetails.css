@@ -1,8 +1,19 @@
+/* SVG */
+#section0 .line {
+  position: absolute;
+  top: -30rem;
+  left: -20rem;
+  z-index: -1;
+}
+
+
 /* _____ #section0 공통 스타일 _____ */
 #section0 {
+  position: relative;
   padding: 20rem 2rem;
   margin: 3rem auto 0rem;
   background: url(../image/mv.png);
+  overflow: hidden;
 }
 
 #section0 .mainTit {
@@ -28,23 +39,10 @@
   align-items: center;
 }
 
-/* --- .left 컬럼 (이미지 및 데스크톱용 가이드) --- */
+/* --- .left --- */
 #section0 .content .left {
   margin-bottom: 5rem;
 }
-
-
-
-
-
-
-/* line 이미지 */
-
-
-
-
-
-
 
 #section0 .content .left .alcoholImg {
   width: 100%;
@@ -60,8 +58,7 @@
 }
 @keyframes floatAnimation {
   0% {transform: translateY(0px);}
-  50% {transform: translateY(-8px);
-  }
+  50% {transform: translateY(-8px);}
   100% {transform: translateY(0px);}
 }
 #section0 .content .left .alcoholImg img {
@@ -103,7 +100,7 @@
 }
 
 
-/* --- .right 컬럼 (제품 정보, 맛 프로필 등) --- */
+/* --- .right --- */
 #section0 .content .right{
   max-width: 60rem;
 }
@@ -258,7 +255,6 @@
   .dsk_only{
     display: none !important;
   }
-
 }
 
 
@@ -276,7 +272,6 @@ screen and (min-width:1200px) {
 
   
   #section0 {
-
     margin: 3rem auto 0rem;
   }
   #section0 .mainTit {
