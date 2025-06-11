@@ -1,0 +1,350 @@
+/* section0_hd_sub_________________________________ */
+section#section0_hd_sub{
+  margin-top: 6.3rem;
+  border-bottom: 1px solid #ccc;
+}
+
+#section0_hd_sub .rel .tit_hd{
+  text-align: center;
+}
+#section0_hd_sub .rel .tit_hd div h2.tit{
+  margin-bottom: 3rem;
+  text-align: center;
+  font-weight: 700;
+}
+#section0_hd_sub .rel .tit_hd div .display_in_360{
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+}
+#section0_hd_sub .rel .tit_hd .display_in_1200{
+  display: none;
+}
+@media (min-width: 768px) {
+  #section0_hd_sub .rel .tit_hd div h2.tit{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  #section0_hd_sub .rel .tit_hd div .display_in_360{
+    font-size: 2rem;
+  }
+  #section0_hd_sub .rel .tit_hd .display_in_1200{
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  section#section0_hd_sub{
+    padding: 6.3rem;
+  }
+
+  #section0_hd_sub .rel .tit_hd{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #section0_hd_sub .rel .tit_hd div{
+    text-align: start;
+  }
+  #section0_hd_sub .rel .tit_hd div h2.tit{
+    font-size: 3.6rem;
+    word-spacing: 1rem;
+    margin-bottom: 4rem;
+    line-height: 4rem;
+    letter-spacing: -0.2rem;
+  }
+  #section0_hd_sub .rel .tit_hd div .display_in_360{
+    display: none;
+  }
+  #section0_hd_sub .rel .tit_hd .display_in_1200{
+    display: inline;
+    text-align: center;
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 3rem;
+  }
+}
+
+
+/* section1_hd_sub_________________________________ */
+/* section 전체 공통 */
+section#section1_hd_sub,
+section#section2_hd_sub{
+  padding: 0 2rem;
+}
+
+#section1_hd_sub .rel .sub_tit{
+  margin-top: 5rem;
+  text-align: center;
+}
+#section1_hd_sub .rel .sub_tit p{
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #121212;
+  margin-bottom: 1rem;
+}
+#section1_hd_sub .rel .sub_tit p .br430{
+  display: none;
+}
+@media (max-width: 430px){
+  #section1_hd_sub .rel .sub_tit p .br430{
+    display: inline;
+  }
+}
+#section1_hd_sub .rel .sub_tit h3{
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #121212;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  max-width: 100%;
+}
+@media (max-width: 480px){
+  #section1_hd_sub .rel .sub_tit h3{
+    font-size: 2.4rem;
+  }
+}
+@media (min-width: 1200px){
+  #section1_hd_sub .rel .sub_tit p{
+    font-size: 2.2rem;
+    margin-top: 10rem;
+  }
+  #section1_hd_sub .rel .sub_tit h3{
+    font-size: 3.2rem;
+  }
+}
+
+/* section2_hd_sub_________________________________ */
+/* label_hd 공통 */
+.label_hd{
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 5rem;
+}
+.label_hd span{
+  font-size: 2rem;
+  font-weight: 600;
+  color: #121212;
+  display: inline-block;
+  padding-left: 2rem;
+  background: url(../image/etc/rectangle.png) no-repeat left center;
+  background-size: 2rem 2rem;
+  line-height: 1.5;
+  text-indent: 1rem;
+}
+@media (min-width: 1200px){
+  .label_hd span{
+    font-size: 2.4rem;
+  }
+}
+
+/* section2_hd_sub - Form Section */
+#section2_hd_sub {
+  color: #121212;
+}
+
+#section2_hd_sub .rel {
+  width: 100%;
+  padding: 0 4vw;
+  margin: 0 auto;
+}
+
+.form_box {
+  width: 70%;
+  margin: auto;
+}
+@media (max-width: 800px){
+  .form_box {
+    width: 100%;
+  }
+}
+
+.form_benefits {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin: 2rem 0 3rem;
+  color: #121212;
+  line-height: 1.8;
+}
+@media (max-width: 412px){
+  .form_benefits{
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 371px){
+  .form_benefits{
+    font-size: 1.4rem;
+  }
+}
+
+.required {
+  color: #B32828;
+  font-weight: bold;
+  margin-left: 0.2rem;
+}
+
+.subscribe_form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form_group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.6rem;
+}
+
+.form_group label,
+.form_group p {
+  font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  padding: 1.2rem;
+  border-radius: 0.8rem;
+  border: 0.1rem solid #ccc;
+  width: 100%;
+  font-size: 1.4rem;
+  background-color: #fff;
+}
+
+.form_group input[type="checkbox"],
+.form_group input[type="radio"] {
+  margin-right: 0.5rem;
+}
+
+/* 관심있는 전통주 종류 버튼 스타일 */
+.sort_tradi_drink {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  border: 0.1rem solid #ccc;
+  border-radius: 0.8rem;
+  background-color: #fff;
+}
+
+.form_group .sort_tradi_drink label {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  cursor: pointer;
+}
+@media (max-width: 472px) {
+  .sort_tradi_drink {
+    justify-content: flex-start;
+  }
+  .sort_tradi_drink label {
+    flex: 0 0 calc((100% - 2rem) / 3);
+  }
+}
+
+.sort_tradi_drink input[type="checkbox"] {
+  display: inline-block;
+  width: 1.6rem;
+  height: 1.6rem;
+  accent-color: #B32828;
+}
+
+/* 혜택 선택 (radio) 스타일 */
+.form_group.benefit input[type="radio"] {
+  display: inline-block;
+  width: 1.6rem;
+  height: 1.6rem;
+  accent-color: #B32828;
+}
+
+.form_group.benefit .benefit_options label:first-child,
+.form_group.benefit .benefit_options label:last-child {
+  border: 0.1rem solid #ccc;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  background-color: #fff;
+}
+
+.form_group.benefit label {
+  border: none;
+  border-radius: 1rem;
+  padding: 0;
+  font-size: 1.4rem;
+  display: block;
+  margin-bottom: 1rem;
+  background: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.form_group.benefit input[type="radio"]:checked + label {
+  border-color: #B32828;
+  background-color: #fff0f0;
+  color: #B32828;
+  font-weight: 700;
+}
+
+/* 약관 동의 체크박스 */
+.form_group.agreement label {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.form_group.agreement input[type="checkbox"] {
+  display: inline-block;
+  width: 1.6rem;
+  height: 1.6rem;
+  accent-color: #B32828;
+}
+
+.form_group.agreement label {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+}
+
+/* 구독 버튼 */
+#section2_hd_sub .rel a{
+  margin: 3rem auto 0 auto;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 45rem;
+  height: 5rem;
+  text-align: center;
+}
+#section2_hd_sub .rel a:hover{
+  opacity: 0.7;
+}
+#section2_hd_sub .rel p.form_note{
+  margin-bottom: 10rem;
+}
+@media (min-width: 1200px){
+  #section2_hd_sub .rel a{
+    font-size: 2rem;
+  }
+}
+
+.form_note {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 500;
+  opacity: 0.8;
+  margin-top: -1.5rem;
+  margin-bottom: 5rem;
+}
