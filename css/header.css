@@ -1,0 +1,551 @@
+/* 모바일에서 보이지 않아야 함 */
+.dsk_only,
+.h_nav,
+.search_wrap{
+  display:none;
+}
+
+header{
+  position: fixed;
+  top: 0;  
+  z-index: 3; 
+  height: 6.3rem;
+  width: 100%;
+  padding: 2rem 2rem 0;
+  transition: 0.3s ease-in-out;
+  background-color: #fff;
+  border-bottom: 1px solid #999;
+  background: #3A3A3A ;
+}
+header .rel{
+  display: flex;
+  justify-content: space-between;
+}
+.header_left{
+  flex: 3;
+}
+.header_tit a{
+  display: block;
+  position: absolute;
+  width: 12rem;
+  left: 50%;
+  transform: translateX( -50%);
+}
+.mob_btn{
+  display: block;
+  width: 2.8rem;
+  height: 1.8rem;
+  position: relative;
+}
+.mob_btn span{
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 0.2rem;
+  background-color: #FAFAFA;
+}
+.mob_btn span:nth-child(1){top: 0;}
+.mob_btn span:nth-child(2){top: 50%;}
+.mob_btn span:nth-child(3){top: 100%;}
+
+
+.scrolling .header_logo.white{opacity: 0;}
+.scrolling .header_logo.black{opacity: 1;}
+.scrolling .mob_btn span{background-color: #FAFAFA;}
+
+/* subNav */
+.subNav{
+  position: fixed;
+  top: 6.3rem;
+  right: -110%;
+  width: 100%;
+  height: 100vh;
+  background-color: #303030;
+  color: #fff;
+  transition: right 0.3s ease-in-out;
+  z-index: 5;
+}
+.subNav .inner{
+  background-color: #fff;
+  color: #000;
+  padding: 2rem;
+}
+.sub_menu .sub_tit{ display: none;}  /* pc용 주메뉴는 안보이게 함 */
+.sub_menu .depth1>li {padding: 1.5rem 0}
+.sub_menu .depth1>li>span {  /* 모바일메뉴에서 보이는 메인메뉴1~5 */
+  display: block;
+  position: relative;
+  font-size: 1.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0.7rem;
+}
+.sub_menu .depth2 {
+  background-color: #f6f6f6;
+  display: none;
+  padding: 1.2rem;
+  font-weight: 700;
+}
+.sub_menu .depth2>li {
+  font-size: 1.4rem;
+  color: #646464;
+  line-height: 2;
+}
+.sub_menu .depth1>li>span:before,
+.sub_menu .depth1>li>span:after {
+  display: block;
+  content: "";
+  width: 1.3rem;
+  height: 0.1rem;
+  background-color: rgb(138, 138, 138);
+  position: absolute;
+  right: 0;
+  top: 49%;
+  transition: 0.3s ease-in-out;
+}
+.sub_menu .depth1>li>span:after {transform: rotate(90deg);}
+.sub_menu .depth1>li.active >span:after{transform: rotate(0deg);}
+
+
+/* 햄거버메뉴 클릭시 나오는 서브메뉴(body에  mOpen클래스를 붙이면~)*/
+.mOpen .subNav{right: 0;}
+.mOpen header{
+  background-color: #3A3A3A ;
+}
+.mOpen .header_logo.black{opacity: 1;}
+.mOpen .header_logo.white{opacity: 0;}
+.mOpen .mob_btn span{background-color: #FAFAFA;}
+.mOpen .mob_btn span:nth-child(1){
+  transform: rotate(45deg);
+  top: 50%;
+}
+.mOpen .mob_btn span:nth-child(2){
+  transform: translateX(100%);
+  opacity: 0;
+}
+.mOpen .mob_btn span:nth-child(3){
+  transform: rotate(-45deg);
+  top: 50%;
+}
+
+
+/* scrollTop_btn */
+.scrollTop_btn{
+  position: fixed;
+  z-index: 5;
+  bottom: 2rem;
+  right: 2rem;
+  width: 6rem;
+  height: 6rem;
+  background: #fff url(../image/top-btn.png) no-repeat center;
+  text-indent: -9999px;
+  border-radius: 2.3rem;
+  border: 0.1rem solid #ededed;
+  box-shadow: 0 .6rem 2rem rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+  transition-delay: 0.5s;
+}
+.scrollTop_btn.On{opacity: 1;}
+
+.site_name{
+  display: inline-block;
+  font-size: 1.3rem;
+  line-height: 3.7rem;
+  padding: 0 1.2rem;
+  position: relative;
+  color: #fff;
+}
+.site_name + .site_name{opacity: 0.5;}
+.site_name + .site_name:before{
+  content: '';
+  display: block;
+  width: 0.1rem;
+  height: 1.2rem;
+  background-color: rgba(255,255,255,0.4);
+  position: absolute;
+  left: 0;
+  top: calc(50% - 0.6rem);
+}
+
+/* footer */
+footer {
+  padding:3rem;
+  background-color: #23241D;
+  text-align: center;
+}
+
+footer h4 img{
+  width:15rem;
+  opacity: 0.3;
+  margin-bottom: 1rem;
+}
+.copy{
+  color: #ddd;
+}
+.mob_only img{
+  display: block;
+  margin: 0 auto 2rem;
+}
+
+@media screen and (min-width:768px) {
+  html {font-size: 68.8%;}
+  .dsk_only{display: block;}
+
+  /* Header */
+  header{
+    height: 6.3rem;
+    padding: 0;
+    border-bottom: 1px solid #999;
+    background-color: #3A3A3A ;
+  }
+
+  header .rel {
+  height: 6.3rem;
+  max-width: 120rem;
+  display: flex;      
+  align-items: center;
+  justify-content: space-between; 
+  padding: 0 1.5rem;
+}
+  .header_left{
+    display: flex;
+    align-items: center;
+  }
+  .header_tit a{
+    min-height: 1.6rem;
+    margin-right: 2.7rem;
+    position: relative;
+  }
+
+  .header_right{display: flex;}
+
+  .h_nav{display: flex;}
+  .h_nav li {
+    display:  none
+  }
+  .h_nav .site_group {
+    width: 20rem;
+    display: block;
+    color: #FAFAFA;
+  }
+  .h_nav .site_group a:hover {
+    color: #E04F4F ;
+  }
+  .site_group .site_inner{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .h_nav .site_group a {
+    font-size: 1.6rem !important;
+    margin-right: 1rem;
+  }
+  .mob_btn span{
+    background-color: #FAFAFA;
+  }
+}
+
+
+@media screen and (min-width:1200px) {
+
+  html{font-size: 62.5%;} 
+  .mob_btn{display: none;}  
+  /* Header */
+  header {
+    height: 6.3rem;
+    padding: 0;
+    border-bottom: 1px solid #999;
+    position: fixed; /* ← fixed로! */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    background-color: #3A3A3A   ;
+  }
+  .rel{
+    max-width: 120rem;
+    margin: auto;
+  }
+  header .rel {
+  max-width: 144rem;
+  height: 6.3rem;
+  display: flex;      
+  align-items: center;
+  justify-content: space-between; 
+}
+  .header_left{
+    display: flex;
+    align-items: center;
+  }
+  .header_tit a{
+    min-height: 1.6rem;
+    margin-right: 2.7rem;
+    position: relative;
+  }
+  .header_right{display: flex;}
+
+  .h_nav{
+    display: flex;
+    gap: 2rem;
+  }
+  .h_nav li{
+    display: flex;
+    align-items: center;
+    position: relative;
+
+  }
+  .gnb-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6.5rem;
+    width: 15rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #FAFAFA;
+    transition: color 0.3s;
+  }
+  .gnb-link:hover {
+    color: #E04F4F ;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+  }
+  
+  .h_nav .site_group {
+    width: 20rem;
+    display: flex;
+    margin-left: 18rem;
+    justify-content: flex-end;
+  }
+  .h_nav .site_group a {
+    font-size: 1.6rem ;
+    color: #FAFAFA;
+  }
+
+  .megamenu{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 1rem;
+  z-index: 9;
+  transition: all 0.5s;
+  display: none;
+}
+.megamenu.active{
+  display: block;
+}
+.megamenu li{
+  padding: 0;
+  width: 15rem;
+  margin: 0 auto;
+}
+
+.megamenu li a{
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  height: inherit;
+  display: block;
+  width: 100%;
+  text-align: center; 
+}
+
+.megamenu li:hover a{
+  font-weight: 600;
+  color:#e84141    
+}
+.megamenu-bg{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 0;
+  width: 100%;
+  z-index: 7;
+  background: #2e2e2e;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.15);
+  transition: all 0.5s;
+  display: none;
+  border-radius: 0 0 1rem 1rem;
+}
+.megamenu-bg.active{
+  display: block;
+  height: 20rem;
+}
+.site_group {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.site_group a {
+  font-size: 1.6rem;
+  transition: color 0.3s;
+}
+
+.site_group a:hover {
+  color: #C9A66B;
+  font-weight: 500;
+}
+
+  footer .mob_only{display: none;}
+  footer .dsk_only{display: block;}
+  footer{
+    padding: 0;
+    text-align: left;
+  }
+
+  .footer-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-logo img{
+    width: 15rem;
+    margin: 2.0rem auto;
+  }
+  .ft-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1.0rem;
+    
+  }
+  
+  .ft-menu li{
+    width: 15rem;
+    height: 3.0rem;
+    line-height: 3.0rem;
+    text-align: center;
+    color: #fff;
+    font-size: 1.4rem;
+  
+  }
+  .ft-menu li:first-child{
+    width: 9rem;
+  }
+  .ft-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ddd;
+    font-size: 1.2rem;
+    margin-top: 3rem;
+  }
+  .copyright{
+    color: #999;
+    padding : 1.0rem 0 2.0rem;
+    font-size: 1.0rem;
+    font-style: normal;
+    margin-top: 2rem;
+  }
+  .ft-right{
+    text-align: right;
+    color: #999;
+  }
+
+}
+
+/* 기본: 모바일에서는 데스크탑 푸터 숨김, 모바일 푸터만 표시 */
+footer .dsk_only {
+  display: none;
+}
+footer .mob_only {
+  display: block;
+}
+
+/* 태블릿 이상에서 데스크탑 푸터만 보이게 & 스타일 적용 */
+@media screen and (min-width: 768px) {
+  footer .dsk_only {
+    display: block;
+    background-color: #23241D;
+    padding: 0.5rem;
+    text-align: left;
+    min-height: 15rem;
+  }
+
+  footer .mob_only {
+    display: none;
+  }
+
+  .footer-desktop .footer-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .footer-desktop .footer-logo img {
+    width: 12rem;
+    margin: 0.5rem auto;
+  }
+
+  .footer-desktop .ft-menu {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    list-style: none;
+    padding: 0;
+  }
+
+
+  .footer-desktop .ft-menu li {
+    color: #fff;
+    font-size: 1.3rem;
+    line-height: 3rem;
+    text-align: center;
+    position: relative;
+  }
+
+  .footer-desktop .ft-menu li::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -20px;
+    height: 1.6rem;
+    width: 0.1rem;
+    background-color: #fff;
+  }
+  .footer-desktop .ft-menu li:last-child:after{
+    display: none;
+  }
+
+
+  .footer-desktop .ft-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+    color: #ddd;
+    font-size: 1.2rem;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .footer-desktop .copyright {
+    color: #999;
+    font-size: 1.0rem;
+    margin-top: 0.5rem;
+  }
+  .ft-left p{
+    font-size: 1.2rem;
+    color: #666;
+  }
+}
+@media screen and (min-width: 1200px) {
+  footer .dsk_only {
+    padding: 2rem;
+  }
+
+  .footer-desktop .ft-menu {
+    margin-bottom: 0.5rem;
+  }
+}
+
+
+
+
+

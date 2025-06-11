@@ -1,66 +1,171 @@
-/* _____Main */
-main {
-  padding-top: 6.3rem;
-}
+/* _____Main Visual & Submenu */
 
-main .visual{
-  height: 15rem;
+main .visual {
+  height: 10rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fafafa;
+  color: #121212;
   text-align: center;
-  background: url(../image/Indianink-top.png) no-repeat center center; 
-  background-size: cover;
+  /* background: url(../image/Indianink-top.png) no-repeat center top;
+  background-size: cover; */
 }
-main .smenu.mob_only{
-  margin-top: 2rem;
+
+main .smenu {
+  border-bottom: 2px solid #ddd;
+  width: 100vw;                /* 화면 전체 너비 */
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
-main .smenu ul:nth-child(2){
+
+main .smenu a {
+  text-decoration: none;
+  color: inherit;
+}
+
+main .smenu li a.active {
+  /* margin-top: 3rem; */
+  height: 18rem;
+}
+
+main .smenu li a.active p {
+  color: #121212;
+  font-weight: 600;
+}
+
+main .smenu li p {
+  color: #737373;
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 2rem;
+}
+
+main .smenu li .smenu-img {
+  height: 10rem;
   display: flex;
   justify-content: center;
-  gap: 3rem;
-  margin-top: 2rem;
+  align-items: flex-end;
+  margin: 0 auto;
 }
-main .smenu li{
+
+main .smenu li img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* _____Mobile Submenu */
+.smenu.mob_only {
+  padding-bottom: 3rem;
+}
+
+.smenu.mob_only ul:nth-child(1) li {
+  min-height: 15rem;
+  /* border: 1px solid #000; */
+}
+
+.smenu.mob_only ul:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  /* border: 1px solid #000; */
+}
+
+.smenu.mob_only ul:nth-child(2) li p{
+  font-size: 1.8rem;
+}
+
+.smenu.mob_only li {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-main .smenu li a {
-  display: block;
-  text-align: center;
-}
-main .smenu li a.active p{
-  color: #121212;
-}
-main .smenu li p{
-  color: #737373;
-}
-main .smenu.mob_only li a.active p{
-  font-size: 3rem;
-}
-main .smenu li a img {
-  /* width: 70%; */
-  height: auto;
-  display: inline-block;
-  margin: auto;
-  margin-bottom: 0.8rem;
+
+.smenu.mob_only img{
+  margin: 0;
 }
 
-@media screen and (min-width:768px),
-screen and (min-width:1200px) {
-  .mob_only {
-  display: none !important;
-  }
-  /* _____Main */
-  main .smenu{
-  height: 20rem;
+.smenu.mob_only li a {
   display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
-  list-style: none;
-  margin: 2rem 3rem 5rem 3rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.smenu.mob_only li a.active p {
+  font-size: 2.4rem;
+}
+
+
+/* _____Desktop & Tablet Submenu */
+@media screen and (min-width: 768px) {
+  .mob_only {
+    display: none !important;
+  }
+  
+  .dsk_only {
+    display: flex !important;
+  }
+
+  main .visual {
+  height: 16rem;
+  }
+
+  main .smenu.dsk_only {
+    /* border: 1px solid #000; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 7rem;
+    list-style: none;
+    padding: 1rem 0 3rem 0;
+  }
+
+  main .smenu.dsk_only li {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+  }
+  
+  main .smenu.dsk_only li a {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+  }
+
+  main .smenu.dsk_only li .smenu-img {
+    height: 5rem;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  main .visual {
+    height: 18rem;
+    margin-top: 6.3rem;
+  }
+}
+
+/* ani */
+.ani.y_Bottom{
+  opacity: 0;
+  transform:translateY(40px);
+}
+.ani.y_Bottom.moving{
+  opacity: 1;
+  transform:translateY(0px);
+  transition: 1s;
+}
+.ani.delay02.y_Bottom.moving {transition-delay: .2s;}
+.ani.delay03.y_Bottom.moving {transition-delay: .3s;}
+.ani.delay04.y_Bottom.moving {transition-delay: .4s;}
+.ani.delay05.y_Bottom.moving {transition-delay: .5s;}
+.ani.delay06.y_Bottom.moving {transition-delay: .6s;}
+.ani.delay07.y_Bottom.moving {transition-delay: .7s;}
+.ani.delay08.y_Bottom.moving {transition-delay: .8s;}

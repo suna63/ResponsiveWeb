@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원가입</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/join.css">
+</head>
+<body>
+  
+  <div class="scrollTop_btn">
+    scroll top button
+  </div>
+
+  <header>
+    <div class="rel">
+      <div class="header_left">
+        <div class="header_tit">
+          <a href="index.html">
+            <img src="image/logo.png" alt="logo" class="header_logo">
+          </a>
+        </div>
+      </div>
+      <div class="header_right">
+        <ul class="h_nav">
+          <li>
+            <a class="gnb-link" href="info.html">여운 소개</a>
+            <ul class="megamenu">
+              <li><a href="event.html">이달의 시음회</a></li>
+              <li><a href="reserve.html">시음회 예약</a></li>
+              <li><a href="news.html">News & Events</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="gnb-link" href="Types1.html">전통주의 종류</a>
+            <ul class="megamenu case2">
+              <li><a href="Types1.html">탁주</a></li>
+              <li><a href="Types2.html">약·청주</a></li>
+              <li><a href="Types3.html">증류주</a></li>
+              <li><a href="Types4.html">과실주</a></li>
+              <li><a href="Types5.html">기타주류</a></li>
+            </ul>
+          </li>
+          <li><a class="gnb-link" href="survey.html">나만의 술 찾기</a></li>
+          <li>
+            <a class="gnb-link" href="handal.html">한 달의 여운</a>
+            <ul class="megamenu">
+              <li><a href="handal_sub.html">한 달의 여운 구독하기</a></li>
+            </ul>
+          </li>
+          <li class="site_group">
+            <div class="site_inner">
+              <a href="login.html">로그인</a>
+              <a href="join.html">회원가입</a>
+            </div>
+          </li>
+        </ul>
+
+        <a href="#" class="mob_btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
+
+
+      <div class="subNav">
+        <div class="inner">
+          <div class="sub_menu"> 
+            <ul class="depth1">
+              <li>
+                <span>여운 소개</span>
+                <a href="info.html" class="sub_tit">여운 소개</a>  <!-- pc용 -->
+                <ul class="depth2">
+                  <li><a href="info.html">여운 소개</a></li>
+                  <li><a href="event.html">이달의 시음회</a></li>
+                  <li><a href="reserve.html">시음회 예약</a></li>
+                  <li><a href="news.html">News & Events</a></li>
+                </ul>
+              </li>
+              <li>
+                <span>전통주의 종류</span>
+                <a href="Types1.html" class="sub_tit">전통주의 종류</a>
+                <ul class="depth2">
+                  <li><a href="Types1.html">탁주</a></li>
+                  <li><a href="Types2.html">약·청주</a></li>
+                  <li><a href="Types3.html">증류주</a></li>
+                  <li><a href="Types4.html">과실주</a></li>
+                  <li><a href="Types5.html">기타주류</a></li>
+                </ul>
+              </li>
+
+
+
+              <li>
+                <span>나만의 술 찾기</span>
+                <a href="survey.html" class="sub_tit">나만의 술 찾기</a>
+                <ul class="depth2">
+                  <li><a href="survey.html">나만의 술 찾기</a></li>
+                </ul>
+              </li>
+
+
+              
+              <li>
+                <span>한 달의 여운</span>
+                <a href="handal.html" class="sub_tit">한 달의 여운</a>
+                <ul class="depth2">
+                  <li><a href="handal.html">한 달의 여운</a></li>
+                  <li><a href="handal_sub.html">한 달의 여운 구독하기</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div> 
+        <div class="site_group">  
+          <a href="login.html" class="site_name">로그인</a>
+          <a href="join.html" class="site_name">회원가입</a>
+        </div>    
+      </div>
+
+    </div>
+            <div class="megamenu-bg"></div>
+  </header>
+
+  <main>
+    <section class="join-wrap">
+      <div class="txt-box">
+          <h2 class="tit b">회원가입</h2>
+      </div>
+  
+      <div class="join">
+        <div class="container">
+          <div class="join-box">
+            <div class="welcome-message">
+              <h3 class="ani y_Bottom delay02">여운에 오신 것을 환영합니다.</h3>
+              <p class="ani y_Bottom delay05">당신의 일상에 풍부한 향과 여운을 선사할 전통주와 함께하세요.</p>
+            </div>
+  
+            <form>
+              <div class="input-group">
+                <label for="userId">아이디 <span class="required">*</span></label>
+                <input type="text" id="userId" name="userId" required placeholder="아이디를 입력해주세요.">
+              </div>
+  
+              <div class="input-group">
+                <label for="password">비밀번호 <span class="required">*</span></label>
+                <input type="password" id="password" name="password" required placeholder="영문 대소문자/숫자/특수문자 중 2가지 이상 조합, 10자~16자">
+              </div>
+  
+              <div class="input-group">
+                <label for="passwordConfirm">비밀번호 확인 <span class="required">*</span></label>
+                <input type="password" id="passwordConfirm" name="passwordConfirm" required placeholder="비밀번호를 다시 입력해주세요.">
+              </div>
+  
+              <div class="input-group">
+                <label for="userName">이름 <span class="required">*</span></label>
+                <input type="text" id="userName" name="userName" required placeholder="이름을 입력해주세요.">
+              </div>
+  
+              <div class="input-group phone-group">
+                  <label for="phonePart1">휴대폰 전화 <span class="required">*</span></label>
+                  <div class="phone-input-wrap">
+                      <select id="phonePart1" name="phonePart1" required>
+                          <option value="" selected disabled>선택</option> <option value="010">010</option>
+                          <option value="011">011</option>
+                          </select>
+                      <span>-</span>
+                      <input type="tel" id="phonePart2" name="phonePart2" required maxlength="4" placeholder="1234">
+                      <span>-</span>
+                      <input type="tel" id="phonePart3" name="phonePart3" required maxlength="4" placeholder="5678">
+                  </div>
+              </div>
+  
+              <div class="input-group">
+                <label for="userEmail">이메일 <span class="required">*</span></label>
+                <input type="email" id="userEmail" name="userEmail" required placeholder="이메일을 입력해주세요.">
+              </div>
+  
+              <div class="input-group birthday-group">
+                <label for="birthYear">생년월일</label>
+                <div class="birthday-input-wrap">
+                    <input type="text" id="birthYear" name="birthYear" maxlength="4" placeholder="년">
+                    <input type="text" id="birthMonth" name="birthMonth" maxlength="2" placeholder="월">
+                    <input type="text" id="birthDay" name="birthDay" maxlength="2" placeholder="일">
+                </div>
+              </div>
+  
+              <div class="agreement-section">
+                <div class="agreement-all-wrap">
+                  <input type="checkbox" id="agreeAll" name="agreeAll">
+                  <label for="agreeAll">약관 전체 동의</label>
+                </div>
+  
+                <hr class="agreement-divider">
+                <div class="agreement-item">
+                  <input type="checkbox" id="termsOfUse" name="termsOfUse" required>
+                  <label for="termsOfUse">이용약관 동의 <span class="required-text">[필수]</span></label>
+                  <a href="#none" class="view-terms">약관보기</a>
+                </div>
+                <div class="agreement-item">
+                  <input type="checkbox" id="privacyPolicy" name="privacyPolicy" required>
+                  <label for="privacyPolicy">개인정보 수집 및 이용 동의 <span class="required-text">[필수]</span></label>
+                  <a href="#none" class="view-terms">약관보기</a>
+                </div>
+                <div class="agreement-item optional">
+                  <input type="checkbox" id="marketingSms" name="marketingSms">
+                  <label for="marketingSms">쇼핑정보 수신 동의 (SMS 수신) <span class="optional-text">[선택]</span></label>
+                  <a href="#none" class="view-terms">약관보기</a>
+                </div>
+                <div class="agreement-item optional">
+                  <input type="checkbox" id="marketingEmail" name="marketingEmail">
+                  <label for="marketingEmail">쇼핑정보 수신 동의 (이메일 수신) <span class="optional-text">[선택]</span></label>
+                  <a href="#none" class="view-terms">약관보기</a>
+                </div>
+              </div>
+              <button type="submit" class="btn">회원가입하기</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="dsk_only footer-desktop">
+      <div class="rel">
+        <div class="footer-flex">
+          <div class="footer-logo">
+            <img src="image/bottom-logo.png" alt="logo">
+          </div>
+          <ul class="ft-menu">
+            <li>여운 소개</li>
+            <li>시음회 예약하기</li>
+            <li>나만의 술 찾기</li>
+            <li>여운 구독 및 체험하기</li>
+          </ul>
+        </div>
+        <div class="ft-content">
+          <div class="ft-left">
+            <p>
+              (주)대한전통주협회 대표 박이서 대한전통주협회 경상남도 창원시 성산구 삼귀로 411-2 (귀산동) <br>
+              사업자 등록번호 693-85-02195 [사업자정보확인] 통신판매업 신고번호 제2020-창원성산-388호 <br>
+              개인정보관리책임자 이현하 070-4105-0977 CPO : 박이서 (yeoun.official@gmail.com)
+            </p>
+            <p class="copyright">
+              © 2025 대한전통주협회. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mob_only footer-mobile">
+      <h4>
+        <a href="#">
+          <img src="image/bottom-logo.png" alt="logo">
+        </a>
+      </h4>
+      <p class="copy">
+        © 2025 대한전통주협회. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/join.js"></script>
+</body>
+</html>

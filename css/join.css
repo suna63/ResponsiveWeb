@@ -1,0 +1,237 @@
+main {
+  width: 100%;
+  border-radius: 10px;
+}
+section {
+  margin-top: 6.3rem;
+}
+
+.txt-box h2 {
+  text-align: center;
+  color: #121212;
+  padding-bottom: 9.5rem;
+  border-bottom: 2px solid #ddd;
+}
+
+/* join */
+.join-box .welcome-message h3 {
+  text-align: center;
+  font-size: 2.4em;
+  margin: 8rem 0 2rem;
+}
+
+.join-box .welcome-message p{
+  text-align: center;
+  color: #666;
+  margin-bottom: 2rem;
+  font-size: 1.6em;
+  line-height: 1.4;
+}
+
+form{
+  margin: auto;
+  max-width: 60rem;
+  padding: 10rem 0;
+}
+
+/* Input */
+.input-group {
+  margin-bottom: 25px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 1.4em;
+  color: #555;
+  margin-bottom: 8px;
+  padding: 0 5px;
+  pointer-events: none;
+}
+
+.input-group label .required {
+  color: #e74c3c;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.input-group input[type="text"],
+.input-group input[type="password"],
+.input-group input[type="email"],
+.input-group input[type="tel"] {
+  width: 100%;
+  padding: 15px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1.2em;
+  color: #333;
+  outline: none;
+  transition: border-color 0.3s ease;
+  background-color: #fff;
+}
+
+.input-group input[type="text"]:focus::placeholder,
+.input-group input[type="password"]:focus::placeholder,
+.input-group input[type="email"]:focus::placeholder,
+.input-group input[type="tel"]:focus::placeholder {
+  color: transparent;
+}
+
+.input-group input[type="text"]:focus,
+.input-group input[type="password"]:focus,
+.input-group input[type="email"]:focus,
+.input-group input[type="tel"]:focus {
+  border-color: #B32828;
+}
+
+/* 전화번호 */
+.phone-group .phone-input-wrap,
+.birthday-group .birthday-input-wrap {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.phone-group select,
+.phone-group input[type="tel"],
+.birthday-group input[type="text"] {
+  padding: 15px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1.2em;
+  flex-grow: 1;
+  outline: none;
+  transition: border-color 0.3s ease;
+  color: #333;
+}
+
+.phone-group select {
+  flex-grow: 0;
+  padding-right: 25px;
+}
+
+.phone-group span {
+  font-size: 1.2em;
+  color: #555;
+}
+
+/* 약관 동의 */
+.agreement-section {
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  background-color: #fdfdfd;
+}
+
+.agreement-all-wrap {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+.agreement-all-wrap input[type="checkbox"] {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.agreement-divider {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 15px 0;
+}
+
+.agreement-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 1.4em;
+  color: #555;
+}
+
+.agreement-item input[type="checkbox"] {
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.agreement-item label {
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+.agreement-item .required,
+.agreement-item .optional-text {
+  font-size: 1.2em;
+  margin-left: 5px;
+}
+
+.agreement-item .required {
+  color: #e74c3c;
+}
+
+.agreement-item .optional-text {
+  color: #888;
+}
+
+.agreement-item .view-terms {
+  margin-left: auto;
+  color: #007bff;
+  text-decoration: underline;
+  font-size: 0.9em;
+}
+
+.agreement-item.optional {
+  color: #777;
+}
+
+/* 버튼*/
+.btn {
+  width: 100%;
+  height: 50px;
+  background: #B32828;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.6em;
+  color: #fff;
+  font-weight: 600;
+  margin-top: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #9e2222;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:768px),
+screen and (min-width:1200px) {
+.login-box {
+  min-width: 60rem;
+}
+}

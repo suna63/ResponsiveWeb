@@ -5,7 +5,20 @@
   left: -20rem;
   z-index: -1;
 }
+#myAnimatedPath {
+  stroke: black;
+  stroke-width: 1; 
+  fill: none;
+  stroke-dasharray: var(--path-length);
+  stroke-dashoffset: var(--path-length);
+  animation: drawLineAnimation 3s ease-out forwards;
+}
 
+@keyframes drawLineAnimation {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
 
 /* _____ #section0 공통 스타일 _____ */
 #section0 {
@@ -24,6 +37,7 @@
   font-size: 2.8rem;
   font-weight: 800;
   margin-bottom: 2rem;
+  margin-left: 1rem;
 }
 #section0 .mainTit p {
   font-size: 2rem;
@@ -244,21 +258,12 @@
 }
 
 
-
-
-
-
-
-
 /* === 모바일 === */
 @media screen and (max-width:767px) {
   .dsk_only{
     display: none !important;
   }
 }
-
-
-
 
 /* === 텝, PC 공통 === */
 @media screen and (min-width:768px),
@@ -276,6 +281,7 @@ screen and (min-width:1200px) {
   }
   #section0 .mainTit {
     text-align: left;
+    margin-left: 1rem;
   }
 
   #section0 .content {
@@ -284,7 +290,7 @@ screen and (min-width:1200px) {
   }
 
   #section0 .content .left {
-    flex: 0 0 35rem; /* 너비 350px 고정, 늘어나거나 줄어들지 않음 */
+    flex: 0 0 35rem;
     margin-bottom: 0;
   }
   #section0 .content .left .alcoholImg {
@@ -319,10 +325,6 @@ screen and (min-width:1200px) {
 
 /* === 테블릿 === */
 @media screen and (min-width:768px) {
-  #section0 {
-  min-width: 78rem;
-  }
-
   #section0 .mainTit p {
     /* padding-right: 40rem; */
     display: inline-block;
